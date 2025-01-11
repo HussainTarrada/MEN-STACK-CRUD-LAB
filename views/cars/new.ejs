@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/cars/">Back to Cars</a>
+    <a href="/" style="margin: 30px;">Back to home page</a>
+    <h1>Please add your car</h1>
+    <form action="/cars" method="POST">
+        <label for="brand">Brand:</label>
+        <input type="text" name="brand" id="brand">
+
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+
+        <label for="model">model:</label>
+        <input type="number" name="number" id="number">
+
+        <button type="submit">Add Car</button>
+    </form>
+</body>
+</html>
