@@ -9,8 +9,11 @@
     <a href="/cars/new">Add New Car</a>
     <h1>All Cars</h1>
     <ul>
-        <% cars.forEach(car => { %>
-            <li><%=cars.name%></li>
+        <% allCars.forEach(car => { %>
+            <li><%= car.brand %></li>
+            <li><%= car.name %></li>
+            <li><%= car.model %></li>
+            <br>
             <% }) %>
     </ul>
 </body>
