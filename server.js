@@ -44,6 +44,14 @@ app.get("/cars", async(req, res)=>{
     res.render("cars/index.ejs", {cars: allCars})
 })
 
+app.get("/cars/:id", async(req, res)=>{
+    const carId = req.params.id
+    console.log(carId)
+    const foundCar = await Cars.findById(carId)
+
+    res.render("cars/oneCar.ejs", {foundCar})
+})
+
 
 // =======================
 // 5. LISTENING ON PORT 3000
